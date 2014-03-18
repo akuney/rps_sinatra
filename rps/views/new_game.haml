@@ -1,0 +1,14 @@
+%h2
+  Welcome to Rock-Paper-Scissors!
+%h3
+  Please select a move from the dropdown menu.
+
+%form{action: '/throw', method: 'POST'}
+  %select{name: 'sign'}
+    %option{value: 'rock'} Rock
+    %option{value: 'paper'} Paper
+    %option{value: 'scissors'} Scissors
+
+  %br
+
+  %input{type: 'submit', value: 'Play the Game'}
